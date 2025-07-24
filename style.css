@@ -34,6 +34,8 @@ body {
     background-blend-mode: lighten;
     /* or 'overlay', 'multiply' etc. */
 
+    max-width: 2000px;
+    margin: 0 auto;
 
 }
 
@@ -243,6 +245,60 @@ nav .right a span {
 }
 
 
+
+/* SECTION 4: Contact */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link_color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    background-color: var(--link_color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(0.9);
+}
+
 @media (max-width: 700px) {
 
     /* navbar */
@@ -292,6 +348,10 @@ nav .right a span {
     .testimony-section .group {
         flex-direction: column;
     }
+
+    .contact-section .group {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {
@@ -302,6 +362,10 @@ nav .right a span {
     }
 
     .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+
+    .contact-section {
         font-size: 16px;
     }
 
