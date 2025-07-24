@@ -95,6 +95,16 @@ nav .right a span {
 
 }
 
+/* SECTION 1: Hero */
+
+.hero-section {
+    padding: 0 20px;
+}
+
+.hero-section .text h2 {
+    font-size: 30px;
+}
+
 .hero-section .text {
     flex: 5;
 }
@@ -146,6 +156,92 @@ nav .right a span {
     border: 2px solid var(--text_color);
 }
 
+/*Section 2: Skills */
+
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.skills-section .cells .cell img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+/* SECTION 3: Testimoney */
+.testimony-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimony-section .group .personal-details {
+    text-align: center;
+    flex: 2;
+}
+
+.testimony-section .group .text {
+    flex: 8;
+}
+
+.testimony-section .group .personal-details img {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimony-section .group .personal-details p {
+    font-weight: 600;
+}
+
+.testimony-section .group .personal-details p:last-child {
+    font-weight: normal;
+}
+
 
 @media (max-width: 700px) {
 
@@ -189,5 +285,24 @@ nav .right a span {
         /* Shadow effect */
     }
 
+    .testimony-section {
+        text-align: center;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    /* SECTION 2: skills */
+
+    .skills-section {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
 
 }
